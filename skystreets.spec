@@ -8,9 +8,11 @@ Group:		Applications/Games
 Source0:	http://skystreets.kaosfusion.com/%{name}-%{version}.tar.bz2
 # Source0-md5:	63b572fef1b14590f3bb7b301787b6bc
 URL:		http://skystreets.kaosfusion.com/
+BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
-BuildRequires:	OpenGL-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
