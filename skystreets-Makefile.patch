@@ -1,0 +1,29 @@
+diff -uNr skystreets.org/Makefile skystreets/Makefile
+--- skystreets.org/Makefile	2003-12-19 01:37:48.000000000 +0100
++++ skystreets/Makefile	2004-01-04 15:21:06.000000000 +0100
+@@ -1,5 +1,5 @@
+ GPP=g++
+-DATAPATH=/usr/share/games/skystreets/
++DATAPATH=/usr/share/skystreets/
+ CFLAGS=`sdl-config --cflags ` -Wall -O2 -D DATAPATH=\"$(DATAPATH)\"
+ LDCONFIG=-lSDL_image `sdl-config --libs ` -lGL -lGLU
+ 
+@@ -20,10 +20,11 @@
+ 	rm *~
+ 
+ install: skystreets
+-	@install -m 0750 -o root -g games skystreets /usr/games/bin/skystreets
+-	-@install -m 0750 -o root -g games -d audio/ $(DATAPATH)/audio
+-	-@install -m 0750 -o root -g games audio/* $(DATAPATH)/audio
+-	-@install -m 0750 -o root -g games -d gfx/ $(DATAPATH)/gfx
+-	-@install -m 0750 -o root -g games gfx/* $(DATAPATH)/gfx
+-	-@install -m 0750 -o root -g games -d levels/ $(DATAPATH)/levels
+-	-@install -m 0750 -o root -g games levels/* $(DATAPATH)/levels
++	@install  -d         $(DESTDIR)/usr/bin
++	@install skystreets  $(DESTDIR)/usr/bin/skystreets
++	-@install -d audio/  $(DESTDIR)$(DATAPATH)/audio
++	-@install audio/*    $(DESTDIR)$(DATAPATH)/audio
++	-@install -d gfx/    $(DESTDIR)$(DATAPATH)/gfx
++	-@install gfx/*      $(DESTDIR)$(DATAPATH)/gfx
++	-@install -d levels/ $(DESTDIR)$(DATAPATH)/levels
++	-@install levels/*   $(DESTDIR)$(DATAPATH)/levels
