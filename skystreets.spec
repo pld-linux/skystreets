@@ -12,6 +12,7 @@ Source1:	http://skystreets.kaosfusion.com/%{name}_data_%{version}.tar.bz2
 Patch0:		%{name}-Makefile.patch
 URL:		http://skystreets.kaosfusion.com/
 BuildRequires:	SDL-devel
+BuildRequires:	SDL_image-devel
 BuildRequires:	OpenGL-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
