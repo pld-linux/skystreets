@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Remake of classic DOS game SkyRoads.
 
 %description -l pl
-Remake starej DOSowej gry SkyRoads.
+Remake starej DOS-owej gry SkyRoads.
 
 %prep
 %setup -q -n %{name} -b 1
