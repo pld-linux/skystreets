@@ -1,5 +1,5 @@
 Summary:	Remake of SkyRoads game
-Summary(pl.UTF-8):   Remake gry SkyRoads
+Summary(pl.UTF-8):	Remake gry SkyRoads
 Name:		skystreets
 Version:	0.2.4
 Release:	1
