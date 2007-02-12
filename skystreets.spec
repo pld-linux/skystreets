@@ -1,5 +1,5 @@
 Summary:	Remake of SkyRoads game
-Summary(pl):	Remake gry SkyRoads
+Summary(pl.UTF-8):   Remake gry SkyRoads
 Name:		skystreets
 Version:	0.2.4
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Remake of classic DOS game SkyRoads.
 
-%description -l pl
+%description -l pl.UTF-8
 Remake starej DOS-owej gry SkyRoads.
 
 %prep
